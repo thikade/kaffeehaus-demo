@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: kaffeehaus
-        image: kaffeehaus:latest
+        image: default-route-openshift-image-registry.apps.cluster-jrdzp.jrdzp.sandbox1092.opentlc.com/openshift/kaffeehaus:latest
         env:
         - name: QUARKUS_DATASOURCE_USERNAME
           value: dbuser
