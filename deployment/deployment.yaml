@@ -25,7 +25,7 @@ spec:
         - name: QUARKUS_DATASOURCE_PASSWORD
           value: dbpass
         - name: QUARKUS_DATASOURCE_JDBC_URL
-          value: jdbc:postgresql://coffee-db:5432/db
+          value: jdbc:postgresql://coffee-db.secure-db.svc.cluster.local:5432/db
         envFrom:
           - configMapRef:
               name: kaffeehaus-config
